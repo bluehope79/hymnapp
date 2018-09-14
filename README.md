@@ -1,4 +1,4 @@
-# Nodejs-board-sample
+
 nodejs, express, mongodb(mongoose), ejs
 
 cd project_name && npm start
