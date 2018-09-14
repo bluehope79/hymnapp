@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>가사 보기</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>가사 보기</h1>
+    <form action="/board/edit" method="post">
+    
+      <h3>제목 : <%=board.title%></h3> 
+    
+      <h3>가사내용 :</h3> <textarea name="modcontents" rows="9" cols="90"><%=board.contents%></textarea> 
+      <input type="text" name="id" value="<%=board._id%>" hidden>
+      <input type="submit" value="확인">
+      <input type="button" value="목록" onclick="location.href='/';">
+    </form>
+  </body>
+</html>
