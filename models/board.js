@@ -9,13 +9,5 @@ var boardSchema = new Schema({
     contents: String
 });
 
-boardSchema.find().sort({'seq':1}).limit(645).exec(function(err,users){
-
-      console.log("q2");
-
-
-      return;
-
-});
 
 module.exports = mongoose.model('hymndata', boardSchema);
