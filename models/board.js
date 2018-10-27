@@ -10,6 +10,6 @@ var boardSchema = new Schema({
 });
 
 var options = {
-    "sort" : ['seq','asc']
+    "sort" : [['seq','asc']]
 }
 module.exports = mongoose.model('hymndata', boardSchema,options);
