@@ -9,4 +9,7 @@ var boardSchema = new Schema({
     contents: String
 });
 
+var options = {
+    "sort" : [['seq','asc']]
+}
 module.exports = mongoose.model('hymndata', boardSchema);
