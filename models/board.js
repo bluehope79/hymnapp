@@ -3,11 +3,10 @@
  */
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
 var boardSchema = new Schema({
+    seq : Number, 
     title: String,
-    contents: String, 
-    seq : Number 
+    contents: String
 });
 
 module.exports = mongoose.model('hymndata', boardSchema);
