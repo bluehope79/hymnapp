@@ -3,10 +3,10 @@ var router = express.Router();
 
 var Board = require('../models/board');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  Board.find({}, function (err, board) {
-      res.render('index', { title: '찬송가봇', board: board });
+  //Board.find({}, function (err, board) {
+    Board.find({}).sort("seq") .exec(function(err, board) {
+      res.render('index', { title: '찬송가목록', board: board });
   });
 });
 
